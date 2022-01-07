@@ -1,0 +1,8 @@
+export const GET_USER = "HomeReducer/GET_USER"
+export const GET_REQUEST = "HomeReducer/GET_REQUEST"
+export const GET_REQUEST_FAIL = "HomeReducer/GET_REQUEST_FAIL"
+export const FILTER_EMPLOY_BYID = "HomeReducer/FILTER_EMPLOY_BYID"
+export const FILTER_EMPLOY_BYNAME = "HomeReducer/FILTER_EMPLOY_BYNAME"
+export const FILTER_EMPLOY_BYEMAIL = "HomeReducer/FILTER_EMPLOY_BYEMAIL"
+export const DEL_EMPLOY = "HomeReducer/DEL_EMPLOY"
+export const GET_ID_EMPLOY = "HomeReducer/GET_ID_EMPLOY"
