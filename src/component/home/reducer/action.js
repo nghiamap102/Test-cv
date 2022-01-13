@@ -6,15 +6,11 @@ import * as Type from './constant'
 export const fetchUser = ()=>{
     return async(dispatch) =>{
         dispatch(getRequest())
-        await axios.get(`https://reqres.in/api/users`)
+        await axios.get(`https://61dd5972f60e8f001766873d.mockapi.io/person/persons`)
         .then((res)=> { 
-            dispatch({type : Type.GET_USER , data : res.data.data})
-            // dispatch(getRequestSuccess(res.data.data))
+            dispatch({type : Type.GET_USER , data : res.data})
         })
         .catch((er) => getRequestFail(er))
-        // setTimeout( 
-        // },1000)
-        
     }
 }
 

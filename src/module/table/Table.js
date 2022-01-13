@@ -15,13 +15,11 @@ const TableUser = (props)=>{
             'key': s.id,
             'id' : s.id,
             'avatar' : s.avatar,
-            'first_name': s.first_name,
-            'last_name': s.last_name,
+            'name': s.name,
+            'department': s.department,
+            'position' : s.position,
             'email' : s.email,
-            'action' : <div>
-                <button onClick={props.onClick} id={s.id} className="btn ant-btn-primary">Delete</button>
-                <a href={`/user/${s.id}`} className="btn ant-btn-primary">Detail</a>
-            </div>
+            'action' : <a href={`/employee/${s.id}`}>Detail</a>,
           }
     })
  
@@ -33,14 +31,24 @@ const TableUser = (props)=>{
         key: 'avatar',
     },
     {
-        title: 'First Name',
-        dataIndex: 'first_name',
-        key: 'first_name',
+        title: 'Name',
+        dataIndex: 'name',
+        key: 'name',
     },
     {
-        title: 'Last Name',
-        dataIndex: 'last_name',
-        key: 'last_name',
+        title: 'Employee ID',
+        dataIndex: 'id',
+        key: 'id',
+    },
+    {
+        title: 'Position',
+        dataIndex: 'position',
+        key: 'position',
+    },
+    {
+        title: 'Department',
+        dataIndex: 'department',
+        key: 'department',
     },
     {
         title: 'Email',
@@ -48,17 +56,10 @@ const TableUser = (props)=>{
         key: 'email',
     },
     {
-        title: 'ID',
-        dataIndex: 'id',
-        key: 'id',
-    },
-    {
         title: 'Action',
         dataIndex: 'action',
         key: 'action',
     },
-    // { title: 'Action', dataIndex: '', key: 'x', render: () => <button onClick={props.onClick}>Delete</button> },
-     
     ];
      
    

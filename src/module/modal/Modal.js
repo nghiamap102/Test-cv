@@ -1,16 +1,8 @@
-import { Button, Col, Empty, Form, Input, Modal, Row, Select } from "antd";
-import React, { useEffect, useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import * as Type from '../reducer/constant'
-import 'antd/dist/antd.css'
+import { Modal} from "antd";
 
-
-const { Option } = Select;
 
 
 export default function ModalConfirm(props){
-
-  
 
   return (
     <>

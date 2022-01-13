@@ -5,6 +5,7 @@ const defaultState = {
     user : null,
     loading : true ,
     err : null,
+    listInspection : null
 }
 
 const userReducer = (state = defaultState , action)=>{
@@ -20,6 +21,10 @@ const userReducer = (state = defaultState , action)=>{
         case Type.GET_REQUEST_FAIL:
             state.loading = false
             state.err = action.data
+            return { ...state }
+        case Type.GET_LIST:
+            state.loading = false
+            state.listInspection = action.data
             return { ...state }
         default:
             return state

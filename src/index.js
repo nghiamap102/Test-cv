@@ -7,6 +7,7 @@ import { Provider } from 'react-redux';
 import store from './config/ConfigStore';
 import 'react-toastify/dist/ReactToastify.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import 'antd/dist/antd.css'
 
 ReactDOM.render(
   <React.StrictMode>

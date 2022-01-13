@@ -1,7 +1,7 @@
 import {applyMiddleware, combineReducers, compose, createStore, } from 'redux'
 import thunk from 'redux-thunk'
-import HomeReducer from '../module/Home/reducer/reducer'
-import UserReducer from '../module/DetailUser/reducer/reducer'
+import HomeReducer from '../component/home/reducer/reducer'
+import UserReducer from '../component/userdetail/reducer/reducer'
 
 
 
